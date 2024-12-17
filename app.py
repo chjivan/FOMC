@@ -4,7 +4,6 @@ import sys
 
 from fomc_dashboard.modules.ai_responder import AzureOpenAIHelper
 
-
 # Dynamically add the project root to Python's path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
