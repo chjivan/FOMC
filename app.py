@@ -3,9 +3,12 @@ import os
 import sys
 
 # Dynamically add the project root to Python's path
-sys.path.append(os.path.expanduser("/Users/conghaoji/Desktop/fomc_dashboard"))
+sys.path.append("/Users/conghaoji/Desktop/fomc_dashboard")
 
 from fomc_dashboard.modules.ai_responder import AzureOpenAIHelper
+print("Current sys.path:")
+print("\n".join(sys.path))
+
 from fomc_dashboard.modules.sentence_transformer import query_faiss
 
 def main():
