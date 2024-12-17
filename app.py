@@ -2,10 +2,6 @@ import streamlit as st
 import os
 import sys
 
-# 添加桌面路径到 sys.path
-desktop_path = os.path.expanduser("/Users/conghaoji/Desktop/fomc_dashboard")
-sys.path.append(desktop_path)
-
 from fomc_dashboard.modules.ai_responder import AzureOpenAIHelper
 
 
