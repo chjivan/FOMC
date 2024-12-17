@@ -2,6 +2,13 @@ import streamlit as st
 import os
 import sys
 
+# 添加桌面路径到 sys.path
+desktop_path = os.path.expanduser("~/Users/conghaoji/Desktop/fomc_dashboard\")  # 替换为你的桌面路径
+sys.path.append(desktop_path)
+
+from fomc_dashboard.modules.ai_responder import AzureOpenAIHelper
+
+
 # Dynamically add the project root to Python's path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
